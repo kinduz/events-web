@@ -1,0 +1,8 @@
+{
+  "titleApp": "Events",
+
+  "notFoundPage": {
+    "first": "Oops...",
+    "second": "It seems you're here 'cause this page does not exist..."
+  }
+}

@@ -1,10 +1,9 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import { EventId } from '@/features';
 
 const EventsIdPage = () => {
-  const params = useParams();
   return (
-    <div>{params.id}</div>
+    <EventId />
   );
 };
 

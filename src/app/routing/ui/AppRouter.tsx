@@ -1,8 +1,9 @@
 import { useRoutes } from 'react-router-dom';
 import React, { Suspense } from 'react';
 import { routeConfig } from '../lib';
-import { SuspenseLoader } from '@/shared';
-import { Footer } from '@/widgets';
+import { SuspenseLoader, useTheme } from '@/shared';
+import { Footer, Header } from '@/widgets';
+import { ContainerStyled } from './AppRouter.styled';
 
 function RoutesFunction() {
   return useRoutes(routeConfig);
@@ -13,10 +14,15 @@ const Layout = ({
 }: {
   children: React.ReactNode;
 }) => {
+  const { theme } = useTheme();
+
   return (
-    <div className="app">
-      {children}
-      <Footer />
+    <div className={`app ${theme}`}>
+      <ContainerStyled>
+        <Header />
+        {children}
+        <Footer />
+      </ContainerStyled>
     </div>
   );
 };

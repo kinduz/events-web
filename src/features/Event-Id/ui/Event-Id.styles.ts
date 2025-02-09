@@ -6,11 +6,16 @@ export const EventIdImgBlockStyled = styled.div`
 `;
 
 export const EventImgStyled = styled.div`
-    width: 100%;
-    max-height: 100%;
+    width: 860px;
+    height: 400px;
     border-radius: 25px;
+    box-shadow: 4px 8px 19px 0px rgba(34, 60, 80, 0.1);
+    
     img {
-        border-radius: 25px;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        border-radius: 15px;
     }
 `;
 

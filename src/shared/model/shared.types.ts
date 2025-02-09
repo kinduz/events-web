@@ -7,3 +7,10 @@ export type TFormProps = {
   handleSubmitForm: () => void;
   formMethods: any;
 };
+
+export type TCardEventProps = {
+  id: string;
+  name: string;
+  img: string;
+  description?: string;
+}

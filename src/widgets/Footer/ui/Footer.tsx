@@ -1,7 +1,12 @@
 import { FooterStyled } from './Footer.styles';
+import { Container } from '@/shared';
 
 export const Footer = () => {
   return (
-    <FooterStyled><span>Lorem</span></FooterStyled>
+    <FooterStyled>
+      <Container>
+        <span>Lorem</span>
+      </Container>
+    </FooterStyled>
   );
 };

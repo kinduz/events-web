@@ -6,8 +6,8 @@ export const EventIdImgBlockStyled = styled.div`
 `;
 
 export const EventImgStyled = styled.div`
-    width: 860px;
-    height: 400px;
+    width: 800px;
+    height: 360px;
     border-radius: 25px;
     box-shadow: 4px 8px 19px 0px rgba(34, 60, 80, 0.1);
     

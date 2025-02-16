@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { TCardEventProps } from '@/shared';
+import { CustomCarousel, responsive, TCardEventProps } from '@/shared';
 
 type TSimilarEventsProps = {
   events: TCardEventProps[];
@@ -7,6 +7,16 @@ type TSimilarEventsProps = {
 
 export const SimilarEvents: FC<TSimilarEventsProps> = ({ events }) => {
   return (
-    <div>1234</div>
+    <div>Похожие события</div>
+    // <CustomCarousel arrows responsive={responsive}>
+    //   <div>124</div>
+    //   <div>124</div>
+    //   <div>124</div>
+    //   {events.map((event) => (
+    //     <div key={event.id}>
+    //       {event.name}
+    //     </div>
+    //   ))}
+    // </CustomCarousel>
   );
 };

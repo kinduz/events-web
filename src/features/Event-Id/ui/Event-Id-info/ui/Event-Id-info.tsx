@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { EventInfoTitle } from './Event-Id-info.styles';
+import { EventTitle } from '@/shared';
 
 type TEventIdInfoProps = {
   title: string;
@@ -8,6 +8,6 @@ type TEventIdInfoProps = {
 
 export const EventIdInfo: FC<TEventIdInfoProps> = ({ title, description }) => {
   return (
-    <div><EventInfoTitle>{title}</EventInfoTitle></div>
+    <div><EventTitle title={title} /></div>
   );
 };

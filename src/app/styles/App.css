@@ -99,4 +99,9 @@ legend {
 .app {
     background: var(--bg-main);
     height: 100vh;
+    width: 100%;
+}
+
+.container {
+    padding: 0 20px;
 }
